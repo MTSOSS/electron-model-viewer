@@ -1,0 +1,39 @@
+{
+    "name": "model-viewer",
+    "productName": "3D Viewer",
+    "version": "1.0.0",
+    "description": "a lightweiht & performant 3D Model Viewer in your right desktop",
+    "main": "src/main.ts",
+    "scripts": {
+        "start": "electron-forge start",
+        "package": "electron-forge package",
+        "make": "electron-forge make",
+        "publish": "electron-forge publish",
+        "lint": "echo \"No linting configured\"",
+        "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/public/static/assets/icons/manifest/1024.icns --prune=true --out=out",
+        "package-win": "electron-packager . Hello World! --overwrite --asar=true --platform=win32 --arch=x64 --icon=src/favicon.ico --prune=true --out=out --version-string.CompanyName=Satyam Verma --version-string.FileDescription=CE --version-string.ProductName=\"Hello World!\"",
+        "package-linux": "electron-packager . Hello World! --overwrite --asar=true --platform=linux --arch=x64 --icon=src/public/static/assets/icons/manifest/512.png --prune=true --out=out"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Satyam Verma",
+        "email": "satyamverma46@outlook.com"
+    },
+    "repository": "https://github.com/MTSOSS/electron.model-viewer.app/",
+    "license": "MIT",
+    "dependencies": {
+        "@electron-forge/maker-dmg": "^6.0.4",
+        "electron-squirrel-startup": "^1.0.0",
+        "update-electron-app": "^2.0.1"
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^6.0.4",
+        "@electron-forge/maker-appx": "^6.0.4",
+        "@electron-forge/maker-deb": "^6.0.4",
+        "@electron-forge/maker-rpm": "^6.0.4",
+        "@electron-forge/maker-squirrel": "^6.0.4",
+        "@electron-forge/maker-zip": "^6.0.4",
+        "@electron-forge/plugin-auto-unpack-natives": "^6.0.4",
+        "electron": "^22.2.0"
+    }
+}
