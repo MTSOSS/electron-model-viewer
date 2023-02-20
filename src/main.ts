@@ -16,7 +16,7 @@ const createWindow = () => {
         titleBarStyle: 'hidden',
         titleBarOverlay: {
             color: '#f5f5f5',
-            symbolColor: '#828282',
+            symbolColor: '#3b3b3b',
             height: 32
         },
         autoHideMenuBar: true,

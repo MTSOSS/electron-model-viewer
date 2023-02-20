@@ -20,7 +20,7 @@ html {
 body {
     padding: 15px;
     background: #f5f5f5;
-/*    background-image: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);*/
+    /*    background-image: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +117,14 @@ span.loader:after {
 
 ::-webkit-scrollbar-track {
     background: transparent;
+}
+
+titleBar {
+    top: 0;
+    height: 32px;
+    width: 100%;
+    position: fixed;
+    -webkit-app-region: drag;
 }
 
 header {

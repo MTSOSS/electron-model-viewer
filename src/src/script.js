@@ -1,6 +1,6 @@
-const _html = document.querySelector('#html');
-const _main = document.querySelector('#main');
-const _splashScreen = document.querySelector('#splash-screen');
+const _html = document.querySelector('html#html');
+const _main = document.querySelector('div#main');
+const _splashScreen = document.querySelector('div#splash-screen');
 setTimeout(function () {
     _main.style.display = "block";
     _html.style.overflowX = "hidden";
